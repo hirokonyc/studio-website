@@ -3,11 +3,13 @@
 <head>
 <meta charset="utf-8">
 <title>Studio Website</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto+Slab" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-
+<main id="contact">
 
 <header>
 <h1>Studio</h1>
@@ -25,18 +27,32 @@
 
 
 
-CONTACT US
-Lorem ipsum dolor sit amet consectetur.
-Your Name
-Your Email
-Your Phone
-Your Message
-Send Message
+<h2>CONTACT US</h2>
+<p class="italic">Lorem ipsum dolor sit amet consectetur.</p>
+<section>
+  <form>
+  <label for="name"></label>
+  <input type="text" class="info" placeholder="Your Name*"><br>
+  <label for="email"></label>
+  <input type="text" class="info" placeholder="Your Email*"><br>
+  <label for="phone"></label>
+  <input type="text" class="info" placeholder="Your Phone*"><br>
+  </form>
 
+  <form id="message">
+  <label for="message"></label>
+    <input type="text" class="message" placeholder="Your Message*">
+  </form>
 
-Copyright © Your Website 2022
-Privacy Policy Terms of Use
+</section>
+<button>Send Message</button>
+</main>
 
+<footer>
+<div><p>Copyright © Your Website 2022</p></div>
+<div><img src="images/social-icons.png" alt="social" style="width:150px;"></div>
+<div><p id="terms">Privacy Policy  &nbsp; &nbsp; &nbsp; Terms of Use</p></div>
+</footer>
 
 </body>
 </html>

@@ -1,29 +1,57 @@
 @charset "utf-8";
 
+body {
+  margin:0;
+}
+
+/*font*/
+h1,h2,h3,h4,nav {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+h1 {
+  text-transform:uppercase;
+  color:#fed136;
+  font-size:24px;
+  vertical-align: middle;
+  padding-left: 50px;
+  font-weight:bolder;
+}
+
+h2 {
+  padding-top: 20px;
+}
+
+p {
+  font-family: 'Roboto Slab', serif;
+  color:grey;
+  font-size: 14px;
+  text-align: center;
+}
 
 
 
+/*header*/
 
 header {
   background-color: #212529;
   display: flex;
   justify-content: space-between;
+  min-height:;
+  margin-bottom: ;
+  padding-left: 40px;
+  padding-right: 40px;
+  align-items: center;
 }
-
-
-header h1 {
-  text-transform:uppercase;
-  color:#fed136;
-  padding-left: 50px;
-}
-
-
 
 nav ul {
 	list-style-type:none;
   display:block;
 	display:flex;
   justify-content: space-between;
+  margin:0;
 }
 
 nav a {
@@ -36,91 +64,217 @@ nav a {
   display:block;
 	padding-left:30px;
 	padding-right:30px;
+
 }
 nav a:hover {
 	background-color:#fed136;
 	color:#f8f9fa;
 }
 
-main {
+/*services*/
+
+#home {
   min-height:768px;
   background-image:url(../images/header-bg.jpg);
   background-size:cover;
   text-align: center;
 }
 
-
-
-main h2 {
+#home h2 {
   color:white;
-  font-size: 24px;
-  padding-top:100px;
-
+  font-size: 48px;
+  font-weight:bolder;
+  font-family
 }
-main p {
+
+#home p {
   color:white;
   font-size:36px;
+  padding-top: 150px;
 }
 
-main button {
+
+/*common*/
+button {
   background-color:gold;
   border:none;
   color:white;
   padding:20px 32px;
   text-align:center;
-  diplay:block;
   font-size: 16px;
+  border-radius: 5px;
+  margin:20px;
 }
 
 
  section {
    max-width:1296px;
    width:90%;
-   margin-left: auto;
-   margin-right: auto;
+   margin: 10px auto 20px auto;
    display:flex;
    flex-wrap: wrap;
+
  }
  section div {
     flex:1;
     text-align: center;
-    padding:10px;
+    margin-top: 20px;
+    padding:20px;
   }
-
 
  section h2 {
    display:block;
    width:100%;
    text-align: center;
-   padding-top:30px;
  }
+
+  section p {
+    text-align: center;
+  }
 
  .italic {
    width:100%;
    font-style:italic;
+   font-family: serif;
    text-align: center;
  }
 
- section p {
-   line-height: 1.5;
- }
 
+
+/*about*/
+#about {
+  width:70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#about div {
+  padding:10px;
+}
+
+#about img {
+  width:180px;
+  border-radius:50%;
+  border-style: solid;
+  border-color: lightgrey;
+  border-width: thick;
+}
+
+.left h3 {
+  text-align: right;
+  margin-bottom: 5px;
+}
+
+.left h4 {
+  text-align: right;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.left p {
+  text-align: right;
+}
+
+.right h3 {
+  text-align: left;
+  margin-bottom: 5px;
+}
+.right h4 {
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.right p {
+  text-align: left;
+}
+.circle {
+  background-color: #fed136;
+  width: 170px;
+  height: 170px;
+  border-radius:50%;
+  border-style: solid;
+  border-color: lightgrey;
+  border-width: thick;
+}
+
+.circle p {
+  color:white;
+  font-size: 20px;
+  padding-top: 40px;
+
+}
+
+
+
+/*team*/
+.profile {
+  border-radius:50%;
+  border-style: solid;
+  border-color: lightgrey;
+  border-width: thick;
+}
+
+/*contct*/
+#contact {
+  background-color: #212529;
+  background-image:url(../images/map-image.png);
+  background-size:cover;
+  text-align: center;
+  padding-bottom: 50px;
+  margin-bottom: 0;
+}
+#contact h2 {
+  color: white;
+  font-size: 32px;
+  margin-bottom: 0;
+}
+
+#contact section {
+  width:1000px;
+  margin: 20px auto 20px auto;
+  display=flex;
+  flex-wrap: wrap;
+}
+
+form {
+  flex:1;
+}
+
+
+.info {
+  width:450px;
+  height:50px;
+  margin:10px;
+  border-radius: 5px;
+
+}
+
+.message {
+  width:450px;
+  height:200px;
+  margin: 10px;
+    border-radius: 5px;
+}
+
+
+
+/*footer*/
  footer {
+   border-top-style: solid;
+   border-width: thin;
    max-width:1296px;
-   width:90%;
-   margin-left: auto;
-   margin-right: auto;
-
    display:flex;
    flex-wrap: wrap;
-   justify-content: space-between;
-   align-items: center;
- }
- footer p {
-   flex:1
-   text-align:center;
+   text-align: center;
+
  }
 
- h2 {
-   text-align: center;
+footer div {
+   flex:1
+}
+footer p {
+  font-size: 12px;
+}
+ #terms {
+   color:#fed136;
  }
