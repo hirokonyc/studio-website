@@ -27,7 +27,7 @@
 
 <p class=italic>Welcome To Our Studio!</p>
 		<h2>IT'S NICE TO MEET YOU</h2>
-		<button type="button" id="more">TELL ME MORE</button>
+		<button type="button" class="button">TELL ME MORE</button>
 
 </main>
 
@@ -69,13 +69,13 @@
 
 <script>
 
-$('button').eq(0).hover(function(){
-    $(this).addClass('expand')
-},
-function(){
-  $(this).removeClass('expand')
+$('button').eq(0).click(function(){
+    $(this).slideUp()
 })
 
+$('main').eq(0).click(function(){
+  $('button').eq(0).fadeIn()
+})
 
 
 

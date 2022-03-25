@@ -6,10 +6,18 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto+Slab" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
 <style>
+body {
+  min-height: 768px;
+}
+
 footer {
   margin-top: 0;
 }
+
 </style>
 </head>
 
@@ -34,23 +42,22 @@ footer {
 
 <h2>CONTACT US</h2>
 <p class="italic">Lorem ipsum dolor sit amet consectetur.</p>
-<section>
-  <form>
-  <label for="name"></label>
-  <input type="text" class="info" placeholder="Your Name*"><br>
-  <label for="email"></label>
-  <input type="text" class="info" placeholder="Your Email*"><br>
-  <label for="phone"></label>
-  <input type="text" class="info" placeholder="Your Phone*"><br>
-  </form>
 
-  <form id="message">
-  <label for="message"></label>
-    <input type="text" class="message" placeholder="Your Message*">
-  </form>
+<form>
+<div id="info">
+  <input type="text" class="" placeholder="Your Name*"><br>
+  <input type="text" class="" placeholder="Your Email*"><br>
+  <input type="text" class="" placeholder="Your Phone*"><br>
+</div>
 
-</section>
-<button>Send Message</button>
+<div id="message">
+    <input type="text" class="" placeholder="Your Message*">
+</div>
+
+<div>
+<input type="submit" class="button" value="Send Message">
+</div>
+</form>
 </main>
 
 <footer>
@@ -58,6 +65,21 @@ footer {
 <div><img src="images/social-icons.png" alt="social" style="width:150px;"></div>
 <div><p id="terms">Privacy Policy  &nbsp; &nbsp; &nbsp; Terms of Use</p></div>
 </footer>
+<script>
+
+
+
+$('.button').click(function(){
+  alert('Thank you! Your message is not received.')
+})
+
+
+
+
+</script>
+
+
+
 
 </body>
 </html>

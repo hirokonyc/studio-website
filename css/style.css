@@ -90,14 +90,11 @@ nav a:hover {
   padding-top: 150px;
 }
 
-.expand {
-  font-size: 20px;
-  padding: 24px 36px;
-}
+
 
 
 /*common*/
-button {
+.button {
   background-color:gold;
   border:none;
   color:white;
@@ -106,6 +103,7 @@ button {
   font-size: 16px;
   border-radius: 5px;
   margin:20px;
+  cursor: pointer;
 }
 
 
@@ -239,28 +237,28 @@ button {
   margin-bottom: 0;
 }
 
-#contact section {
-  width:1000px;
+form {
+  width:900px;
   margin: 20px auto 20px auto;
-  display=flex;
+  display:flex;
   flex-wrap: wrap;
 }
 
-form {
+form div {
   flex:1;
 }
 
 
-.info {
-  width:450px;
+#info input {
+  width:400px;
   height:50px;
   margin:10px;
   border-radius: 5px;
 
 }
 
-.message {
-  width:450px;
+#message input {
+  width:400px;
   height:200px;
   margin: 10px;
     border-radius: 5px;
@@ -289,11 +287,14 @@ footer p {
    color:#fed136;
  }
 
- @media screen and (max-width:640px){
+ @media screen and (max-width:850px){
 
    header {
      flex-direction: column;
      position:static;
+   }
+   header nav ul {
+     justify-content: center;
    }
    section {
      flex-direction:column;
@@ -301,5 +302,9 @@ footer p {
    #about {
      width:100%;
      background-image: none;
-}
+   }
+   form {
+     width:90%;
+     flex-direction:column;
+   }
 }
