@@ -72,7 +72,7 @@ nav a:hover {
 
 #home {
   min-height:768px;
-  background-image:url(../images/header-bg.jpg);
+  background-image:url("https://fit-front-end-course.s3.amazonaws.com/images-hs/studio-website/header-bg.jpg");
   background-size:cover;
   text-align: center;
 }
@@ -94,6 +94,8 @@ nav a:hover {
 
 
 /*common*/
+
+
 .button {
   background-color:gold;
   border:none;
@@ -112,7 +114,7 @@ nav a:hover {
    width:90%;
    margin: 10px auto 20px auto;
    display:flex;
-   justify-content: space-between;
+   justify-content: center;
    flex-wrap: wrap;
 
  }
@@ -140,19 +142,21 @@ nav a:hover {
 
 
 
+
 /*about*/
 #about {
-  width:70%;
-  margin: 40px auto 20px auto;
+  width:860px;
+  margin: 40px auto 40px auto;
   background-image: linear-gradient(#D3D3D3, #D3D3D3);
   background-size: 2px 100%;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
 }
 #about div {
-  padding:0px 10px 20px 10px;
-  margin-top: 0;
-  margin-bottom: 0;
+  padding:20px;
+  margin: 0px auto 0px auto;
+  align-items: center;
+
 }
 
 #about img {
@@ -165,6 +169,7 @@ nav a:hover {
 
 .left h3 {
   text-align: right;
+  margin-top: 0px;
   margin-bottom: 5px;
 }
 
@@ -180,6 +185,7 @@ nav a:hover {
 
 .right h3 {
   text-align: left;
+  margin-top: 0px;
   margin-bottom: 5px;
 }
 .right h4 {
@@ -192,22 +198,24 @@ nav a:hover {
   text-align: left;
 }
 #circle {
+  display:block;
   background-color: #fed136;
-  width: 160px;
-  height: 160px;
+  width: 180px;
+  height: 180px;
   border-radius:50%;
   border-style: solid;
   border-color: lightgrey;
   border-width: thick;
   margin-left: auto;
-  margin-right:auto;
+  margin-right: auto;
+
 }
 
 #circle p {
   color:white;
-  font-size: 28px;
-  padding-top: 10px;
-
+  font-size: 24px;
+  text-align: center;
+  padding-top:28px;
 }
 
 
@@ -225,10 +233,9 @@ nav a:hover {
 /*contct*/
 #contact {
   background-color: #212529;
-  background-image:url(../images/map-image.png);
+  background-image:url("https://fit-front-end-course.s3.amazonaws.com/images-hs/studio-website/map-image.png");
   background-size:cover;
   text-align: center;
-  padding-bottom: 50px;
   margin-bottom: 0;
 }
 #contact h2 {
@@ -239,7 +246,7 @@ nav a:hover {
 
 form {
   width:900px;
-  margin: 20px auto 20px auto;
+  margin: 30px auto 30px auto;
   display:flex;
   flex-wrap: wrap;
 }
@@ -261,13 +268,14 @@ form div {
   width:400px;
   height:200px;
   margin: 10px;
-    border-radius: 5px;
+  border-radius: 5px;
 }
 
 
 
 /*footer*/
  footer {
+   max-height:100px;
    border-top-style: solid;
    border-width: thin;
    display:flex;
