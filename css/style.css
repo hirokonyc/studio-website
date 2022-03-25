@@ -38,32 +38,29 @@ p {
 header {
   background-color: #212529;
   display: flex;
-  justify-content: space-between;
-  min-height:;
-  margin-bottom: ;
-  padding-left: 40px;
-  padding-right: 40px;
-  align-items: center;
+  justify-content:space-between;
+  padding: 5 20px;
+  position:sticky;
+  top:0;
 }
 
-nav ul {
+header nav ul {
 	list-style-type:none;
-  display:block;
 	display:flex;
   justify-content: space-between;
   margin:0;
 }
 
-nav a {
+header nav a {
 	text-decoration:none;
   text-transform:uppercase;
 	color:#f8f9fa;
-	font-size:18px;
+	font-size:16px;
 	padding-top:20px;
 	padding-bottom:20px;
   display:block;
-	padding-left:30px;
-	padding-right:30px;
+	padding-left:20px;
+	padding-right:20px;
 
 }
 nav a:hover {
@@ -71,7 +68,7 @@ nav a:hover {
 	color:#f8f9fa;
 }
 
-/*services*/
+/*services (index)*/
 
 #home {
   min-height:768px;
@@ -93,6 +90,11 @@ nav a:hover {
   padding-top: 150px;
 }
 
+.expand {
+  font-size: 20px;
+  padding: 24px 36px;
+}
+
 
 /*common*/
 button {
@@ -108,10 +110,11 @@ button {
 
 
  section {
-   max-width:1296px;
+
    width:90%;
    margin: 10px auto 20px auto;
    display:flex;
+   justify-content: space-between;
    flex-wrap: wrap;
 
  }
@@ -128,15 +131,13 @@ button {
    text-align: center;
  }
 
-  section p {
-    text-align: center;
-  }
 
  .italic {
    width:100%;
    font-style:italic;
    font-family: serif;
    text-align: center;
+   font-size: 18px;
  }
 
 
@@ -144,11 +145,16 @@ button {
 /*about*/
 #about {
   width:70%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 40px auto 20px auto;
+  background-image: linear-gradient(#D3D3D3, #D3D3D3);
+  background-size: 2px 100%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 #about div {
-  padding:10px;
+  padding:0px 10px 20px 10px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 #about img {
@@ -187,20 +193,22 @@ button {
 .right p {
   text-align: left;
 }
-.circle {
+#circle {
   background-color: #fed136;
-  width: 170px;
-  height: 170px;
+  width: 160px;
+  height: 160px;
   border-radius:50%;
   border-style: solid;
   border-color: lightgrey;
   border-width: thick;
+  margin-left: auto;
+  margin-right:auto;
 }
 
-.circle p {
+#circle p {
   color:white;
-  font-size: 20px;
-  padding-top: 40px;
+  font-size: 28px;
+  padding-top: 10px;
 
 }
 
@@ -213,6 +221,8 @@ button {
   border-color: lightgrey;
   border-width: thick;
 }
+
+
 
 /*contct*/
 #contact {
@@ -262,10 +272,10 @@ form {
  footer {
    border-top-style: solid;
    border-width: thin;
-   max-width:1296px;
    display:flex;
    flex-wrap: wrap;
    text-align: center;
+   margin-top:50px;
 
  }
 
@@ -278,3 +288,18 @@ footer p {
  #terms {
    color:#fed136;
  }
+
+ @media screen and (max-width:640px){
+
+   header {
+     flex-direction: column;
+     position:static;
+   }
+   section {
+     flex-direction:column;
+   }
+   #about {
+     width:100%;
+     background-image: none;
+}
+}

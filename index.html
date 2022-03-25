@@ -5,6 +5,7 @@
 <title>Studio Website</title>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto+Slab" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -26,7 +27,7 @@
 
 <p class=italic>Welcome To Our Studio!</p>
 		<h2>IT'S NICE TO MEET YOU</h2>
-		<button type="button">TELL ME MORE</button>
+		<button type="button" id="more">TELL ME MORE</button>
 
 </main>
 
@@ -65,4 +66,20 @@
 </footer>
 
 </body>
+
+<script>
+
+$('button').eq(0).hover(function(){
+    $(this).addClass('expand')
+},
+function(){
+  $(this).removeClass('expand')
+})
+
+
+
+
+</script>
+
+
 </html>
